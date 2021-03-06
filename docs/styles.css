@@ -145,7 +145,7 @@ form
 }
 
 
-#btn-menu {
+#btn-menu, #btn-menu1, #btn-menu2, #btn-menu3{
     display: none;      
 }
 
@@ -161,10 +161,11 @@ form
     visibility: hidden;   
 }
 
-#btn-menu:checked ~ .container-menu {
+#btn-menu:checked ~ .container-menu, #btn-menu1:checked ~ .container-menu, #btn-menu2:checked ~ .container-menu, #btn-menu3:checked ~ .container-menu {
     opacity: 1;
     visibility: visible;
 }
+
 
 
 .cont-menu{
@@ -177,9 +178,10 @@ form
     transform: translateX(-100%);
 }
 
-#btn-menu:checked ~ .container-menu .cont-menu{
+#btn-menu:checked ~ .container-menu .cont-menu, #btn-menu1:checked ~ .container-menu .cont-menu, #btn-menu2:checked ~ .container-menu .cont-menu, #btn-menu3:checked ~ .container-menu .cont-menu{
     transform: translateX(0%);
 }
+
 
 
 .cont-menu .nav-menu a{
