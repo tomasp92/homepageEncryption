@@ -2,11 +2,6 @@
 
 <html lng="en">
     <hed>
-        <div id="user" style="position:fixed; top:6; left:0; background-color: white;">  
-            <a href = "https://tomasp92.github.io/">
-                Volver a portfolio
-            </a>
-        </div>
         <link href="https://stckpth.bootstrpcdn.com/bootstrp/4.1.3/css/bootstrp.min.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <title> Encrpited Messeges</title>
@@ -23,38 +18,20 @@
 
 
      <body class = body1>
-          <h1>
-            Lee mensajes encriptados
-        </h1>
+        <div class="#btn-menu" style="float: left; line-height: 70px; color: white; font-size: 100px;">
+            <label for="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" cursor="pointer" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </label>
+           
+        </div>
+        <h1> Lee mensajes encriptados </h1>
         <h3>
             En esta pagina, pasando la clave de 26 letras y el texto encriptado que recibiste podrás leer el mensaje
         </h3>
-        <nav>
-            <ul>
-                <li>
-                    <a href = "https://tomasp92.github.io/homepageEncryption">
-                    Pagina Principal
-                    </a>
-                </li>
-                 <li>
-                    <a href = "https://tomasp92.github.io/homepageEncryption/page2">
-                    Videos
-                    </a>
-                </li>
-                 <li>
-                     <a href = "https://tomasp92.github.io/homepageEncryption/page3">
-                    Encripta tus propios mensajes
-                    </a>
-                </li>
-                 <li>
-                     <a href = "https://tomasp92.github.io/homepageEncryption/page4">
-                    Decodifica mensajes
-                    </a>
-                </li>
-            </ul>
-        </nav>
         <div>
-              <form>
+            <form>
                 <input id = "clave" type = "text"  placeholder = "Escribe aquí la clave recibida en mayusculas" maxlenght="26"> </textarea>
             </form>
             <form>
@@ -66,6 +43,23 @@
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
             <button id ="decodificartexto" onclick="getData()"> Decodificar texto </button>
+        </div>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav class="nav-menu">
+                    <a href = "https://tomasp92.github.io/homepageEncryption">Pagina Principal</a>
+                    <a href = "https://tomasp92.github.io/homepageEncryption/page2">Videos</a>
+                    <a href = "https://tomasp92.github.io/homepageEncryption/page3">Encripta tus propios mensajes</a>
+                    <a href = "https://tomasp92.github.io/homepageEncryption/page4">Decodifica mensajes</a>
+                    <a href = "https://tomasp92.github.io/">Volver a portfolio</a>  
+                </nav>
+                <label for="btn-menu" class="icon-equis">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </label>
+            </div>
         </div>
 
         <script>
